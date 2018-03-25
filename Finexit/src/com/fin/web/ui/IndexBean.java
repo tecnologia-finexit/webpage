@@ -1,17 +1,22 @@
 package com.fin.web.ui;
 
-import javax.enterprise.context.RequestScoped;
+import java.io.Serializable;
+
+import javax.enterprise.context.ConversationScoped;
 import javax.inject.Named;
 
 @Named
-@RequestScoped
-public class IndexBean{
+@ConversationScoped
+public class IndexBean implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6990116898145987614L;
 	private String message;
 
 	public IndexBean() {
 		super();
-		this.message = new Double(Math.random()).toString();
 	}
 
 	public String getMessage() {
