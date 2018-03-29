@@ -17,7 +17,6 @@ public class IndexBean implements Serializable{
 
 	public IndexBean() {
 		super();
-		System.out.println("IndexBean.Constructor");
 	}
 
 	public String getMessage() {
