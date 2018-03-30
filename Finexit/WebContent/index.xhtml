@@ -31,9 +31,7 @@
 		<link rel="shortcut icon" href="favicon.ico">
 	 -->
 
-	<link
-		href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700'
-		rel='stylesheet' type='text/css'></link>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'></link>
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css"></link>
@@ -47,7 +45,6 @@
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css"></link>
 
-
 	<link rel="stylesheet" href="css/blue.css"></link>
 
 	<!-- Modernizr JS -->
@@ -59,44 +56,40 @@
 
 </h:head>
 <h:body>
-
 	<h:form>
 
 		<header role="banner" id="fh5co-header">
 			<div class="container">
-				<!-- <div class="row"> -->
 				<nav class="navbar navbar-default">
 					<div class="navbar-header">
-						<!-- Mobile Toggle Menu Button -->
-						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"
-							data-toggle="collapse" data-target="#navbar"
-							aria-expanded="false" aria-controls="navbar"><i></i></a> <a
-							class="navbar-brand" href="index.xhtml"> <h:outputText
-								value="#{applicationBean.COMPANY_NAME}"></h:outputText>
-						</a>
+						<a href="#{applicationBean.URL_HOME}" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" 
+						   aria-expanded="false" aria-controls="navbar"><i></i></a>
+						<a class="navbar-brand" href="#{applicationBean.URL_HOME}"> 
+							<h:outputText value="#{applicationBean.COMPANY_NAME}"></h:outputText></a>						
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="#" data-nav-section="home"><span>Inicio</span></a></li>
-							<li><a href="#" data-nav-section="about"><span>Nosotros</span></a></li>
-							<li><a href="#" data-nav-section="features"><span>Quiero
-										pedir prestado</span></a></li>
-							<li><a href="#" data-nav-section="services"><span>Quiero
-										prestar</span></a></li>
-							<li><a href="#" data-nav-section="testimonials"><span>Regulación</span></a></li>
-							<li><a href="#" data-nav-section="pricing"><span>Inicia
-										sesión</span></a></li>
+							<li class="active"> 
+								<a href="#" data-nav-section="home"><span>Inicio</span></a></li>
+							<li>
+								<a href="#" data-nav-section="about"><span>Nosotros</span></a></li>
+							<li>
+								<a href="#" data-nav-section="features"><span>Quiero pedir prestado</span></a></li>
+							<li>
+								<a href="#" data-nav-section="services"><span>Quiero prestar</span></a></li>
+							<li>
+								<a href="#" data-nav-section="testimonials"><span>Regulación</span></a></li>
+							<li>
+								<a href="#" data-nav-section="pricing"><span>Inicia sesión</span></a></li>
 						</ul>
 					</div>
-				</nav>
-				<!-- </div> -->
+				</nav>				
 			</div>
 		</header>
 
-
 		<div id="slider" data-section="home">
 			<div class="owl-carousel owl-carousel-fullwidth">
-				<!-- You may change the background color here. -->
+				
 				<div class="item" style="background: #352f44;">
 					<div class="container" style="position: relative;">
 						<div class="row">
@@ -110,28 +103,24 @@
 											porta. <a href="#{applicationBean.URL_HOME}">Conoce más</a>
 										</h2>
 										<p class="to-animate-2">
-											<a href="#" class="btn btn-primary btn-lg">Descarga la
-												aplicación</a>
+											<a href="#{applicationBean.URL_HOME}" class="btn btn-primary btn-lg">Descarga la aplicación</a>
 										</p>
 									</div>
 								</div>
 							</div>
-							<div
-								class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
+							<div class="col-md-4 col-md-push-1 col-sm-4 col-sm-push-1 iphone-image">
 								<div class="iphone to-animate-2">
 									<img src="images/iphone-2.png" alt="iphone"></img>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
-				<!-- You may change the background color here.  -->
+				
 				<div class="item" style="background: #38569f;">
 					<div class="container" style="position: relative;">
 						<div class="row">
-							<div
-								class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5">
+							<div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5">
 								<div class="fh5co-owl-text-wrap">
 									<div class="fh5co-owl-text">
 										<h1 class="fh5co-lead to-animate">Quiero prestar</h1>
@@ -141,8 +130,7 @@
 												href="#{applicationBean.URL_HOME}">Conoce más</a>
 										</h2>
 										<p class="to-animate-2">
-											<a href="#" class="btn btn-primary btn-lg"> Quiero
-												prestar </a>
+											<a href="#{applicationBean.URL_HOME}" class="btn btn-primary btn-lg"> Quiero prestar </a>
 										</p>
 									</div>
 								</div>
@@ -153,7 +141,6 @@
 									<img src="images/iphone-1.png" alt="iphone"></img>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -165,18 +152,16 @@
 							<div class="col-md-8 col-md-offset-2 text-center">
 								<div class="fh5co-owl-text-wrap">
 									<div class="fh5co-owl-text">
-										<h1 class="fh5co-lead to-animate">Suspendisse urna magna,
-											mollis eget!</h1>
+										<h1 class="fh5co-lead to-animate">Suspendisse urna magna, mollis eget!</h1>
 										<h2 class="fh5co-sub-lead to-animate">
 											Aliquam mollis malesuada tortor non varius. Aliquam non lorem
-											venenatis, volutpat turpis a, egestas orci. <a
-												href="#{applicationBean.URL_HOME}" target="_blank"> <h:outputText
-													value="Conoce más"></h:outputText>
+											venenatis, volutpat turpis a, egestas orci. 
+											<a href="#{applicationBean.URL_HOME}"> 
+												<h:outputText value="Conoce más"></h:outputText>
 											</a>
 										</h2>
-										<p class="to-animate-2">
-											<a href="#{applicationBean.URL_HOME}" target="_blank"
-												class="btn btn-primary btn-lg">Descarga la aplicación</a>
+										<p class="to-animate-2"> 
+											<a href="#{applicationBean.URL_HOME}" class="btn btn-primary btn-lg">Descarga la aplicación</a>
 										</p>
 									</div>
 								</div>
@@ -187,7 +172,6 @@
 
 			</div>
 		</div>
-
 
 		<h:inputText value="#{indexBean.message}">
 			<p:ajax event="keyup" update="test"></p:ajax>
