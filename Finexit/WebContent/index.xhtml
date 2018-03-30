@@ -188,31 +188,29 @@
 			</div>
 		</div>
 
-		<p:outputPanel id="test">
-		
-			
-			
-			<h:inputText value="#{indexBean.message}">
-				
-			</h:inputText>
 
+		<h:inputText value="#{indexBean.message}">
+			<p:ajax event="keyup" update="test"></p:ajax>
+		</h:inputText>
+
+		<p:outputPanel id="test">
 			<h:outputText styleClass="btn btn-info"
 				value="Input: #{indexBean.message}"></h:outputText>
-
-			<p:remoteCommand name="callJsMethod"
-				actionListener="#{indexBean.testMethod}">
-			</p:remoteCommand>
-
-			<p:dataTable value="#{indexBean.list}" var="item">
-				<p:column headerText="items">
-					<div onclick="callJsMethod()">
-						<h:outputText value="#{item}"></h:outputText>
-					</div>
-
-				</p:column>
-			</p:dataTable>
-
 		</p:outputPanel>
+
+		<p:remoteCommand name="callJsMethod"
+			actionListener="#{indexBean.testMethod}">
+		</p:remoteCommand>
+
+		<p:dataTable value="#{indexBean.list}" var="item">
+			<p:column headerText="items">
+				<div onclick="callJsMethod()">
+					<h:outputText value="#{item}"></h:outputText>
+				</div>
+
+			</p:column>
+		</p:dataTable>
+
 
 	</h:form>
 
