@@ -227,11 +227,11 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: 0s;
   transition: 0s;
 }
-
+/* Finexit: update padding-bottom:50 to 25 */
 .section-heading {
   float: left;
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   margin-bottom: 50px;
   clear: both;
 }
@@ -278,14 +278,14 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-
+/* Finexit: update - change from padding 7 to padding 5 */
 #fh5co-our-services,
 #fh5co-about-us,
 #fh5co-features,
 #fh5co-testimonials,
 #fh5co-pricing,
 #fh5co-press {
-  padding: 7em 0;
+  padding: 5em 0;
 }
 @media screen and (max-width: 480px) {
   #fh5co-our-services,
@@ -526,9 +526,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   color: #444;
 }
-
+/* Finexit: update from padding 7 to padding 5 */
 #fh5co-features {
-  padding: 7em 0;
+  padding: 5em 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-features {
